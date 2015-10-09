@@ -1,10 +1,10 @@
-all: index.html
+all: output/index.html
 
-index.html:
-	asciidoctor scratch.asc -o index.html
+output/index.html:
+	asciidoctor scratch.asc -o output/index.html
 
 clean:
-	rm -f index.html
+	rm -rf output
 
 setup:
 	gem install asciidoctor
